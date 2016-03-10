@@ -1,0 +1,1419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Lint Report</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" type="text/css" href="lint-results_files/hololike.css" />
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body>
+<h1>Lint Report</h1>
+<div class="titleSeparator"></div>
+Check performed at Thu May 28 16:17:38 BRT 2015.<br/>
+1 errors and 78 warnings found:<br/><br/>
+<table class="overview">
+<tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#CommitPrefEdits">CommitPrefEdits: Missing <code>commit()</code> on <code>SharedPreference</code> editor</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#OldTargetApi">OldTargetApi: Target SDK attribute is not targeting latest version</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#InflateParams">InflateParams: Layout Inflation without a Parent</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-error.png" alt="Error" />
+<a href="#LongLogTag">LongLogTag: Too Long Log Tags</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ManifestOrder">ManifestOrder: Incorrect order of elements in manifest</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#GradleDependency">GradleDependency: Obsolete Gradle Dependency</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#GradleDynamicVersion">GradleDynamicVersion: Gradle Dynamic Version</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#SpUsage">SpUsage: Using <code>dp</code> instead of <code>sp</code> for text sizes</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#Deprecated">Deprecated: Using deprecated resources</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Security">Security</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#TrulyRandom">TrulyRandom: Weak RNG</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#AllowBackup">AllowBackup: Missing <code>allowBackup</code> attribute</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UseSparseArrays">UseSparseArrays: HashMap can be replaced with SparseArray</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedResources">UnusedResources: Unused resources</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#UselessParent">UselessParent: Useless parent layout</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconColors">IconColors: Icon colors do not follow the recommended visual style</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconDipSize">IconDipSize: Icon density-independent size validation</a>
+</td></tr>
+<tr>
+<td class="countColumn">9</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconLocation">IconLocation: Image defined in density-independent drawable folder</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconDensities">IconDensities: Icon densities validation</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#IconMissingDensityFolder">IconMissingDensityFolder: Missing density folder</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#TextFields">TextFields: Missing <code>inputType</code> or <code>hint</code></a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#SmallSp">SmallSp: Text size is too small</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
+</td></tr>
+<tr>
+<td class="countColumn">5</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#ContentDescription">ContentDescription: Image without <code>contentDescription</code></a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
+</td></tr>
+<tr>
+<td class="countColumn">13</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#HardcodedText">HardcodedText: Hardcoded text</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Bi-directional Text">Bi-directional Text</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#RtlSymmetry">RtlSymmetry: Padding and margin symmetry</a>
+</td></tr>
+<tr>
+<td class="countColumn">22</td><td class="issueColumn"><img border="0" align="top" src="lint-results_files/lint-warning.png" alt="Warning" />
+<a href="#RtlHardcoded">RtlHardcoded: Using left/right instead of start/end attributes</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (11)</a>
+</td></tr></table>
+<br/>
+<a name="Correctness"></a>
+<div class="category"><a href="#" title="Return to top">Correctness</a><div class="categorySeparator"></div>
+</div>
+<a name="CommitPrefEdits"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">CommitPrefEdits: Missing <code>commit()</code> on <code>SharedPreference</code> editor</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/quickblox/sample/chat/pushnotifications/PlayServicesHelper.java">../../src/com/quickblox/sample/chat/pushnotifications/PlayServicesHelper.java</a>:210</span>: <span class="message">Consider using <code>apply()</code> instead; <code>commit</code> writes its data to persistent storage immediately, whereas <code>apply</code> will handle it in the background</span><br /><pre class="errorlines">
+<span class="lineno"> 207</span>         SharedPreferences.Editor editor = prefs.edit();
+<span class="lineno"> 208</span>         editor.putString(PROPERTY_REG_ID, regId);
+<span class="lineno"> 209</span>         editor.putInt(PROPERTY_APP_VERSION, appVersion);
+<span class="lineno"> 210</span>         <span class="errorspan">editor.commit();</span>
+<span class="lineno"> 211</span>     }
+<span class="lineno"> 212</span> }
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing <code>commit()</code> on <code>SharedPreference</code> editor.</div>
+<div class="explanation">
+After calling <code>edit()</code> on a <code>SharedPreference</code>, you must call <code>commit()</code> or <code>apply()</code> on the editor to save the results.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "CommitPrefEdits" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="OldTargetApi"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">OldTargetApi: Target SDK attribute is not targeting latest version</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../AndroidManifest.xml">../../AndroidManifest.xml</a>:9</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the <code>android.os.Build.VERSION_CODES</code> javadoc for details.</span><br /><pre class="errorlines">
+<span class="lineno">   6</span> 
+<span class="lineno">   7</span>     &lt;uses-sdk
+<span class="lineno">   8</span>         android:minSdkVersion="14"
+<span class="lineno">   9</span>         <span class="errorspan">android:targetSdkVersion="19" /></span>
+<span class="lineno">  10</span> 
+<span class="lineno">  11</span>     &lt;uses-permission android:name="android.permission.INTERNET" />
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Target SDK attribute is not targeting latest version.</div>
+<div class="explanation">
+When your application runs on a version of Android that is more recent than your <code>targetSdkVersion</code> specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the <code>targetSdkVersion</code> is less than 14, your app may get an option button in the UI.<br/>
+<br/>
+To fix this issue, set the <code>targetSdkVersion</code> to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</div><br/>To suppress this error, use the issue id "OldTargetApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="InflateParams"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">InflateParams: Layout Inflation without a Parent</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java">../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java</a>:62</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno">  59</span>         LayoutInflater vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+<span class="lineno">  60</span> 
+<span class="lineno">  61</span>         if (convertView == null) {
+<span class="lineno">  62</span>             convertView = vi.inflate(R.layout.list_item_message, <span class="errorspan">null);</span>
+<span class="lineno">  63</span>             holder = createViewHolder(convertView);
+<span class="lineno">  64</span>             convertView.setTag(holder);
+</pre>
+<span class="location"><a href="../../src/com/quickblox/sample/chat/ui/adapters/DialogsAdapter.java">../../src/com/quickblox/sample/chat/ui/adapters/DialogsAdapter.java</a>:57</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno">  54</span>         // initIfNeed view
+<span class="lineno">  55</span>         //
+<span class="lineno">  56</span>         if (convertView == null) {
+<span class="lineno">  57</span>             convertView = inflater.inflate(R.layout.list_item_room, <span class="errorspan">null);</span>
+<span class="lineno">  58</span>             holder = new ViewHolder();
+<span class="lineno">  59</span>             holder.name = (TextView)convertView.findViewById(R.id.roomName);
+</pre>
+<span class="location"><a href="../../src/com/quickblox/sample/chat/ui/adapters/UsersAdapter.java">../../src/com/quickblox/sample/chat/ui/adapters/UsersAdapter.java</a>:54</span>: <span class="message">Avoid passing <code>null</code> as the view root (needed to resolve layout parameters on the inflated layout's root element)</span><br /><pre class="errorlines">
+<span class="lineno">  51</span>     public View getView(int position, View convertView, ViewGroup parent) {
+<span class="lineno">  52</span>         ViewHolder holder;
+<span class="lineno">  53</span>         if (convertView == null) {
+<span class="lineno">  54</span>             convertView = inflater.inflate(R.layout.list_item_user, <span class="errorspan">null);</span>
+<span class="lineno">  55</span>             holder = new ViewHolder();
+<span class="lineno">  56</span>             holder.login = (TextView) convertView.findViewById(R.id.userLogin);
+</pre>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Layout Inflation without a Parent.</div>
+<div class="explanation">
+When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://www.doubleencore.com/2013/05/layout-inflation-as-intended">http://www.doubleencore.com/2013/05/layout-inflation-as-intended</a>
+</div><br/>To suppress this error, use the issue id "InflateParams" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="LongLogTag"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">LongLogTag: Too Long Log Tags</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/quickblox/sample/chat/core/GroupChatImpl.java">../../src/com/quickblox/sample/chat/core/GroupChatImpl.java</a>:88</span>: <span class="message">The logging tag can be at most 23 characters, was 28 (Could not join chat, errors:)</span><br /><pre class="errorlines">
+<span class="lineno">  85</span>                 });
+<span class="lineno">  86</span> 
+<span class="lineno">  87</span> 
+<span class="lineno">  88</span>                 <span class="errorspan">Log.w("Could not join chat, errors:", Arrays.toString(list.toArray()));</span>
+<span class="lineno">  89</span>             }
+<span class="lineno">  90</span>         });
+</pre>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="error">Error</span><div class="summary">
+Explanation: Too Long Log Tags.</div>
+<div class="explanation">
+Log tags are only allowed to be at most 23 tag characters long.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "LongLogTag" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="ManifestOrder"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ManifestOrder: Incorrect order of elements in manifest</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../AndroidManifest.xml">../../AndroidManifest.xml</a>:72</span>: <span class="message"><code>&lt;permission></code> tag appears after <code>&lt;application></code> tag</span><br /><pre class="errorlines">
+<span class="lineno">  69</span>   This permission must be called my_app_package.permission.C2D_MESSAGE
+<span class="lineno">  70</span>   (where my_app_package is the package name of your app as defined by the manifest tag),
+<span class="lineno">  71</span>   otherwise it will not work. -->
+<span class="lineno">  72</span>     <span class="errorspan">&lt;permission</span>
+<span class="lineno">  73</span>         android:name="com.quickblox.simplesample.messages.permission.C2D_MESSAGE"
+<span class="lineno">  74</span>         android:protectionLevel="signature" />
+</pre>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Incorrect order of elements in manifest.</div>
+<div class="explanation">
+The &lt;application> tag should appear after the elements which declare which version you need, which features you need, which libraries you need, and so on. In the past there have been subtle bugs (such as themes not getting applied correctly) when the <code>&lt;application></code> tag appears before some of these other elements, so it's best to order your manifest in the logical dependency order.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ManifestOrder" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="GradleDependency"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">GradleDependency: Obsolete Gradle Dependency</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:23</span>: <span class="message">A newer version of com.google.android.gms:play-services than 4.2.+ is available: 7.3.0</span><br /><pre class="errorlines">
+<span class="lineno">  20</span> 
+<span class="lineno">  21</span> dependencies {
+<span class="lineno">  22</span>     compile files(rootProject.core_jar_path, rootProject.chat_jar_path, rootProject.messages_jar_path)
+<span class="lineno">  23</span>     <span class="errorspan">compile 'com.google.android.gms:play-services:4.2.+'</span>
+<span class="lineno">  24</span>     compile 'com.android.support:support-v4:19.0.+'
+<span class="lineno">  25</span>     compile 'com.android.support:appcompat-v7:19.0.0'
+</pre>
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:24</span>: <span class="message">A newer version of com.android.support:support-v4 than 19.0.+ is available: 22.1.1</span><br /><pre class="errorlines">
+<span class="lineno">  21</span> dependencies {
+<span class="lineno">  22</span>     compile files(rootProject.core_jar_path, rootProject.chat_jar_path, rootProject.messages_jar_path)
+<span class="lineno">  23</span>     compile 'com.google.android.gms:play-services:4.2.+'
+<span class="lineno">  24</span>     <span class="errorspan">compile 'com.android.support:support-v4:19.0.+'</span>
+<span class="lineno">  25</span>     compile 'com.android.support:appcompat-v7:19.0.0'
+<span class="lineno">  26</span>     compile project(':pull-to-refresh')
+</pre>
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:25</span>: <span class="message">A newer version of com.android.support:appcompat-v7 than 19.0.0 is available: 22.1.1</span><br /><pre class="errorlines">
+<span class="lineno">  22</span>     compile files(rootProject.core_jar_path, rootProject.chat_jar_path, rootProject.messages_jar_path)
+<span class="lineno">  23</span>     compile 'com.google.android.gms:play-services:4.2.+'
+<span class="lineno">  24</span>     compile 'com.android.support:support-v4:19.0.+'
+<span class="lineno">  25</span>     <span class="errorspan">compile 'com.android.support:appcompat-v7:19.0.0'</span>
+<span class="lineno">  26</span>     compile project(':pull-to-refresh')
+<span class="lineno">  27</span> }
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Obsolete Gradle Dependency.</div>
+<div class="explanation">
+This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "GradleDependency" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="GradleDynamicVersion"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">GradleDynamicVersion: Gradle Dynamic Version</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:23</span>: <span class="message">Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.google.android.gms:play-services:4.2.+)</span><br /><pre class="errorlines">
+<span class="lineno">  20</span> 
+<span class="lineno">  21</span> dependencies {
+<span class="lineno">  22</span>     compile files(rootProject.core_jar_path, rootProject.chat_jar_path, rootProject.messages_jar_path)
+<span class="lineno">  23</span>     <span class="errorspan">compile 'com.google.android.gms:play-services:4.2.+'</span>
+<span class="lineno">  24</span>     compile 'com.android.support:support-v4:19.0.+'
+<span class="lineno">  25</span>     compile 'com.android.support:appcompat-v7:19.0.0'
+</pre>
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:24</span>: <span class="message">Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.android.support:support-v4:19.0.+)</span><br /><pre class="errorlines">
+<span class="lineno">  21</span> dependencies {
+<span class="lineno">  22</span>     compile files(rootProject.core_jar_path, rootProject.chat_jar_path, rootProject.messages_jar_path)
+<span class="lineno">  23</span>     compile 'com.google.android.gms:play-services:4.2.+'
+<span class="lineno">  24</span>     <span class="errorspan">compile 'com.android.support:support-v4:19.0.+'</span>
+<span class="lineno">  25</span>     compile 'com.android.support:appcompat-v7:19.0.0'
+<span class="lineno">  26</span>     compile project(':pull-to-refresh')
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Gradle Dynamic Version.</div>
+<div class="explanation">
+Using <code>+</code> in dependencies lets you automatically pick up the latest available version rather than a specific, named version. However, this is not recommended; your builds are not repeatable; you may have tested with a slightly different version than what the build server used. (Using a dynamic version as the major version number is more problematic than using it in the minor version position.)
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "GradleDynamicVersion" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SpUsage"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">SpUsage: Using <code>dp</code> instead of <code>sp</code> for text sizes</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:52</span>: <span class="message">Should use "<code>sp</code>" instead of "<code>dp</code>" for text sizes</span><br /><pre class="errorlines">
+<span class="lineno">  49</span>             android:layout_gravity="left|center_vertical"
+<span class="lineno">  50</span>             android:text="Me"
+<span class="lineno">  51</span>             android:singleLine="false"
+<span class="lineno">  52</span>             <span class="errorspan">android:textSize="20dp" /></span>
+<span class="lineno">  53</span> 
+<span class="lineno">  54</span>         &lt;TextView
+</pre>
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:60</span>: <span class="message">Should use "<code>sp</code>" instead of "<code>dp</code>" for text sizes</span><br /><pre class="errorlines">
+<span class="lineno">  57</span>             android:layout_height="wrap_content"
+<span class="lineno">  58</span>             android:layout_alignParentRight="true"
+<span class="lineno">  59</span>             android:text="Friend"
+<span class="lineno">  60</span>             <span class="errorspan">android:textSize="20dp" /></span>
+<span class="lineno">  61</span> 
+<span class="lineno">  62</span>         &lt;ProgressBar
+</pre>
+<span class="location"><a href="../../res/layout/dialog_new.xml">../../res/layout/dialog_new.xml</a>:14</span>: <span class="message">Should use "<code>sp</code>" instead of "<code>dp</code>" for text sizes</span><br /><pre class="errorlines">
+<span class="lineno">  11</span>         android:layout_gravity="left|center_vertical"
+<span class="lineno">  12</span>         android:layout_marginBottom="10dp"
+<span class="lineno">  13</span>         android:text="Select users to chat"
+<span class="lineno">  14</span>         <span class="errorspan">android:textSize="20dp" /></span>
+<span class="lineno">  15</span> 
+<span class="lineno">  16</span>     &lt;Button
+</pre>
+<span class="location"><a href="../../res/layout/dialogs_activity.xml">../../res/layout/dialogs_activity.xml</a>:14</span>: <span class="message">Should use "<code>sp</code>" instead of "<code>dp</code>" for text sizes</span><br /><pre class="errorlines">
+<span class="lineno">  11</span>         android:layout_gravity="left|center_vertical"
+<span class="lineno">  12</span>         android:layout_marginBottom="10dp"
+<span class="lineno">  13</span>         android:text="Select a dialog to chat"
+<span class="lineno">  14</span>         <span class="errorspan">android:textSize="20dp" /></span>
+<span class="lineno">  15</span> 
+<span class="lineno">  16</span>     &lt;ListView
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using <code>dp</code> instead of <code>sp</code> for text sizes.</div>
+<div class="explanation">
+When setting text sizes, you should normally use <code>sp</code>, or "scale-independent pixels". This is like the <code>dp</code> unit, but it is also scaled by the user's font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user's preference.<br/>
+<br/>
+There <b>are</b> cases where you might need to use <code>dp</code>; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user's font size settings are not respected, so consider adjusting the layout itself to be more flexible.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/training/multiscreen/screendensities.html">http://developer.android.com/training/multiscreen/screendensities.html</a>
+</div><br/>To suppress this error, use the issue id "SpUsage" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="Deprecated"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">Deprecated: Using deprecated resources</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:20</span>: <span class="message"><code>android:autoText</code> is deprecated: Use <code>inputType</code> instead</span><br /><pre class="errorlines">
+<span class="lineno">  17</span>             android:layout_height="wrap_content"
+<span class="lineno">  18</span>             android:layout_alignParentBottom="true"
+<span class="lineno">  19</span>             android:layout_toLeftOf="@+id/chatSendButton"
+<span class="lineno">  20</span>             <span class="errorspan">android:autoText="true"</span>
+<span class="lineno">  21</span>             android:hint="message text" />
+<span class="lineno">  22</span> 
+</pre>
+</div>
+<div class="metadata">Priority: 2 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using deprecated resources.</div>
+<div class="explanation">
+Deprecated views, attributes and so on are deprecated because there is a better way to do something. Do it that new way. You've been warned.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "Deprecated" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Security"></a>
+<div class="category"><a href="#" title="Return to top">Security</a><div class="categorySeparator"></div>
+</div>
+<a name="TrulyRandom"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">TrulyRandom: Weak RNG</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/quickblox/sample/chat/core/PrivateChatImpl.java">../../src/com/quickblox/sample/chat/core/PrivateChatImpl.java</a>:80</span>: <span class="message">Potentially insecure random numbers on Android 4.3 and older. Read https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html for more info.</span><br /><pre class="errorlines">
+<span class="lineno">  77</span> 
+<span class="lineno">  78</span> 		//Generating key
+<span class="lineno">  79</span> 		try {
+<span class="lineno">  80</span> 			<span class="errorspan">SecureRandom random = new SecureRandom();</span>
+<span class="lineno">  81</span> 			KeyPairGenerator keyPairGeneratorM = KeyPairGenerator.getInstance("RSA");
+<span class="lineno">  82</span> 			keyPairGeneratorM.initialize(1024);
+</pre>
+</div>
+<div class="metadata">Priority: 9 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Weak RNG.</div>
+<div class="explanation">
+Key generation, signing, encryption, and random number generation may not receive cryptographically strong values due to improper initialization of the underlying PRNG on Android 4.3 and below.<br/>
+<br/>
+If your application relies on cryptographically secure random number generation you should apply the workaround described in https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html .<br/>
+<br/>
+This lint rule is mostly informational; it does not accurately detect whether cryptographically secure RNG is required, or whether the workaround has already been applied. After reading the blog entry and updating your code if necessary, you can disable this lint issue.
+</div>
+<br/><div class="moreinfo">More info: <a href="https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html">https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html</a>
+</div><br/>To suppress this error, use the issue id "TrulyRandom" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="AllowBackup"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">AllowBackup: Missing <code>allowBackup</code> attribute</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../AndroidManifest.xml">../../AndroidManifest.xml</a>:14</span>: <span class="message">Should explicitly set <code>android:allowBackup</code> to <code>true</code> or <code>false</code> (it's <code>true</code> by default, and that can have some security implications for the application's data)</span><br /><pre class="errorlines">
+<span class="lineno">  11</span>     &lt;uses-permission android:name="android.permission.INTERNET" />
+<span class="lineno">  12</span>     &lt;uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<span class="lineno">  13</span> 
+<span class="lineno">  14</span>     <span class="errorspan">&lt;application</span>
+<span class="lineno">  15</span>         android:name=".ApplicationSingleton"
+<span class="lineno">  16</span>         android:icon="@drawable/ic_launcher"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing <code>allowBackup</code> attribute.</div>
+<div class="explanation">
+The allowBackup attribute determines if an application's data can be backed up and restored. It is documented at <a href="http://developer.android.com/reference/android/R.attr.html#allowBackup">http://developer.android.com/reference/android/R.attr.html#allowBackup</a><br/>
+<br/>
+By default, this flag is set to <code>true</code>. When this flag is set to <code>true</code>, application data can be backed up and restored by the user using <code>adb backup</code> and <code>adb restore</code>.<br/>
+<br/>
+This may have security consequences for an application. <code>adb backup</code> allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. <code>adb restore</code> allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.<br/>
+<br/>
+Setting <code>allowBackup="false"</code> opts an application out of both backup and restore.<br/>
+<br/>
+To fix this warning, decide whether your application should support backup, and explicitly set <code>android:allowBackup=(true|false)"</code>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/android/R.attr.html#allowBackup">http://developer.android.com/reference/android/R.attr.html#allowBackup</a>
+</div><br/>To suppress this error, use the issue id "AllowBackup" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Performance"></a>
+<div class="category"><a href="#" title="Return to top">Performance</a><div class="categorySeparator"></div>
+</div>
+<a name="UseSparseArrays"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseSparseArrays: HashMap can be replaced with SparseArray</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/quickblox/sample/chat/core/ChatService.java">../../src/com/quickblox/sample/chat/core/ChatService.java</a>:197</span>: <span class="message">Use <code>new SparseArray&lt;QBUser>(...)</code> instead for better performance</span><br /><pre class="errorlines">
+<span class="lineno"> 194</span>     }
+<span class="lineno"> 195</span> 
+<span class="lineno"> 196</span> 
+<span class="lineno"> 197</span>     private Map&lt;Integer, QBUser> dialogsUsers = <span class="errorspan">new HashMap&lt;Integer, QBUser>();</span>
+<span class="lineno"> 198</span> 
+<span class="lineno"> 199</span>     public Map&lt;Integer, QBUser> getDialogsUsers() {
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: HashMap can be replaced with SparseArray.</div>
+<div class="explanation">
+For maps where the keys are of type integer, it's typically more efficient to use the Android <code>SparseArray</code> API. This check identifies scenarios where you might want to consider using <code>SparseArray</code> instead of <code>HashMap</code> for better performance.<br/>
+<br/>
+This is <b>particularly</b> useful when the value types are primitives like ints, where you can use <code>SparseIntArray</code> and avoid auto-boxing the values from <code>int</code> to <code>Integer</code>.<br/>
+<br/>
+If you need to construct a <code>HashMap</code> because you need to call an API outside of your control which requires a <code>Map</code>, you can suppress this warning using for example the <code>@SuppressLint</code> annotation.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseSparseArrays" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedResources"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedResources: Unused resources</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/activity_login.xml">../../res/layout/activity_login.xml</a></span>: <span class="message">The resource <code>R.layout.activity_login</code> appears to be unused</span><br />
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused resources.</div>
+<div class="explanation">
+Unused resources make applications larger and slow down builds.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UselessParent"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UselessParent: Useless parent layout</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:7</span>: <span class="message">This <code>RelativeLayout</code> layout or its <code>LinearLayout</code> parent is possibly useless</span><br /><pre class="errorlines">
+<span class="lineno">   4</span>     android:layout_height="match_parent"
+<span class="lineno">   5</span>     android:orientation="vertical">
+<span class="lineno">   6</span> 
+<span class="lineno">   7</span>     <span class="errorspan">&lt;RelativeLayout</span>
+<span class="lineno">   8</span>         android:id="@+id/container"
+<span class="lineno">   9</span>         android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../res/layout/list_item_message.xml">../../res/layout/list_item_message.xml</a>:7</span>: <span class="message">This <code>LinearLayout</code> layout or its <code>RelativeLayout</code> parent is possibly useless</span><br /><pre class="errorlines">
+<span class="lineno">   4</span>     android:layout_width="wrap_content"
+<span class="lineno">   5</span>     android:layout_height="wrap_content">
+<span class="lineno">   6</span> 
+<span class="lineno">   7</span>     <span class="errorspan">&lt;LinearLayout</span>
+<span class="lineno">   8</span>         android:id="@+id/content"
+<span class="lineno">   9</span>         android:layout_width="wrap_content"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 2 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Useless parent layout.</div>
+<div class="explanation">
+A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UselessParent" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability:Icons"></a>
+<div class="category"><a href="#" title="Return to top">Usability:Icons</a><div class="categorySeparator"></div>
+</div>
+<a name="IconColors"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconColors: Icon colors do not follow the recommended visual style</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/drawable-ldpi/app_icon.png">../../res/drawable-ldpi/app_icon.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable-ldpi/app_icon.png" /><span class="message">Notification icons must be entirely white</span><br clear="right"/>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon colors do not follow the recommended visual style.</div>
+<div class="explanation">
+Notification icons and Action Bar icons should only white and shades of gray. See the Android Design Guide for more details. Note that the way Lint decides whether an icon is an action bar icon or a notification icon is based on the filename prefix: <code>ic_menu_</code> for action bar icons, <code>ic_stat_</code> for notification icons etc. These correspond to the naming conventions documented in <a href="http://developer.android.com/guide/practices/ui_guidelines/icon_design.html">http://developer.android.com/guide/practices/ui_guidelines/icon_design.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconColors" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconDipSize"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconDipSize: Icon density-independent size validation</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/drawable-xhdpi/app_icon.png">../../res/drawable-xhdpi/app_icon.png</a></span>: <span class="message">The image <code>app_icon.png</code> varies significantly in its density-independent (dip) size across the various density versions: drawable-ldpi/app_icon.png: 96x96 dp (72x72 px), drawable-mdpi/app_icon.png: 48x48 dp (48x48 px), drawable-xxhdpi/app_icon.png: 48x48 dp (144x144 px), drawable-xhdpi/app_icon.png: 48x48 dp (96x96 px)</span><br />
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 3 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../res/drawable-xxhdpi/app_icon.png">../../res/drawable-xxhdpi/app_icon.png</a></span>
+<li> <span class="location"><a href="../../res/drawable-mdpi/app_icon.png">../../res/drawable-mdpi/app_icon.png</a></span>
+<li> <span class="location"><a href="../../res/drawable-ldpi/app_icon.png">../../res/drawable-ldpi/app_icon.png</a></span>
+</ul>
+</div><br/><br/>
+<table><tr><td><a href="../../res/drawable-xhdpi/app_icon.png"><img border="0" align="top" src="../../res/drawable-xhdpi/app_icon.png" /></a>
+</td><td><a href="../../res/drawable-mdpi/app_icon.png"><img border="0" align="top" src="../../res/drawable-mdpi/app_icon.png" /></a>
+</td><td><a href="../../res/drawable-ldpi/app_icon.png"><img border="0" align="top" src="../../res/drawable-ldpi/app_icon.png" /></a>
+</td><td><a href="../../res/drawable-xxhdpi/app_icon.png"><img border="0" align="top" src="../../res/drawable-xxhdpi/app_icon.png" /></a>
+</td></tr><tr><th>xhdpi</th><th>mdpi</th><th>ldpi</th><th>xxhdpi</th></tr>
+</table>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon density-independent size validation.</div>
+<div class="explanation">
+Checks the all icons which are provided in multiple densities, all compute to roughly the same density-independent pixel (<code>dip</code>) size. This catches errors where images are either placed in the wrong folder, or icons are changed to new sizes but some folders are forgotten.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "IconDipSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconLocation"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconLocation: Image defined in density-independent drawable folder</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/drawable/ic_action_new.png">../../res/drawable/ic_action_new.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable/ic_action_new.png" /><span class="message">Found bitmap drawable <code>res/drawable/ic_action_new.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../res/drawable/ic_launcher.png">../../res/drawable/ic_launcher.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable/ic_launcher.png" /><span class="message">Found bitmap drawable <code>res/drawable/ic_launcher.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../res/drawable/ic_room.png">../../res/drawable/ic_room.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable/ic_room.png" /><span class="message">Found bitmap drawable <code>res/drawable/ic_room.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../res/drawable/ic_user.png">../../res/drawable/ic_user.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable/ic_user.png" /><span class="message">Found bitmap drawable <code>res/drawable/ic_user.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../res/drawable/incoming_message_bg.9.png">../../res/drawable/incoming_message_bg.9.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable/incoming_message_bg.9.png" /><span class="message">Found bitmap drawable <code>res/drawable/incoming_message_bg.9.png</code> in densityless folder</span><br clear="right"/>
+<button id="IconLocationDivLink" onclick="reveal('IconLocationDiv');" />+ 4 More Occurrences...</button>
+<div id="IconLocationDiv" style="display: none">
+<span class="location"><a href="../../res/drawable/outgoing_message_bg.9.png">../../res/drawable/outgoing_message_bg.9.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable/outgoing_message_bg.9.png" /><span class="message">Found bitmap drawable <code>res/drawable/outgoing_message_bg.9.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../res/drawable/qb_splash_bg.png">../../res/drawable/qb_splash_bg.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable/qb_splash_bg.png" /><span class="message">Found bitmap drawable <code>res/drawable/qb_splash_bg.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../res/drawable/qb_splash_hero.png">../../res/drawable/qb_splash_hero.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable/qb_splash_hero.png" /><span class="message">Found bitmap drawable <code>res/drawable/qb_splash_hero.png</code> in densityless folder</span><br clear="right"/>
+<span class="location"><a href="../../res/drawable/qb_splash_link.png">../../res/drawable/qb_splash_link.png</a></span>: <img class="embedimage" align="right" src="../../res/drawable/qb_splash_link.png" /><span class="message">Found bitmap drawable <code>res/drawable/qb_splash_link.png</code> in densityless folder</span><br clear="right"/>
+</div>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Image defined in density-independent drawable folder.</div>
+<div class="explanation">
+The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to <code>drawable-mdpi</code> and consider providing higher and lower resolution versions in <code>drawable-ldpi</code>, <code>drawable-hdpi</code> and <code>drawable-xhdpi</code>. If the icon <b>really</b> is density independent (for example a solid color) you can place it in <code>drawable-nodpi</code>.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconLocation" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconDensities"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconDensities: Icon densities validation</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/drawable-hdpi">../../res/drawable-hdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-hdpi</code>: app_icon.png (found in drawable-mdpi, drawable-xhdpi, drawable-xxhdpi)</span><br />
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon densities validation.</div>
+<div class="explanation">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.<br/>
+<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconDensities" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconMissingDensityFolder"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconMissingDensityFolder: Missing density folder</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res">../../res</a></span>: <span class="message">Missing density variation folders in <code>res</code>: drawable-xxxhdpi</span><br />
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing density folder.</div>
+<div class="explanation">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as <code>drawable-hdpi</code>.<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconMissingDensityFolder" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability"></a>
+<div class="category"><a href="#" title="Return to top">Usability</a><div class="categorySeparator"></div>
+</div>
+<a name="TextFields"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">TextFields: Missing <code>inputType</code> or <code>hint</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/activity_login.xml">../../res/layout/activity_login.xml</a>:14</span>: <span class="message">The view name (<code>@+id/passwordEdit</code>) suggests this is a password, but it does not include '<code>textPassword</code>' in the <code>inputType</code></span><br /><pre class="errorlines">
+<span class="lineno">  11</span>         android:hint="login" />
+<span class="lineno">  12</span> 
+<span class="lineno">  13</span>     &lt;EditText
+<span class="lineno">  14</span>         <span class="errorspan">android:id="@+id/passwordEdit"</span>
+<span class="lineno">  15</span>         android:layout_width="match_parent"
+<span class="lineno">  16</span>         android:layout_height="wrap_content"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing <code>inputType</code> or <code>hint</code></div>
+<div class="explanation">
+Providing an <code>inputType</code> attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). Similarly,a hint attribute displays a hint to the user for what is expected in the text field.<br/>
+<br/>
+The lint detector also looks at the <code>id</code> of the view, and if the id offers a hint of the purpose of the field (for example, the <code>id</code> contains the phrase <code>phone</code> or <code>email</code>), then lint will also ensure that the <code>inputType</code> contains the corresponding type attributes.<br/>
+<br/>
+If you really want to keep the text field generic, you can suppress this warning by setting <code>inputType="text"</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "TextFields" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SmallSp"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">SmallSp: Text size is too small</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/list_item_message.xml">../../res/layout/list_item_message.xml</a>:19</span>: <span class="message">Avoid using sizes smaller than <code>12sp</code>: <code>10sp</code></span><br /><pre class="errorlines">
+<span class="lineno">  16</span>             android:layout_width="wrap_content"
+<span class="lineno">  17</span>             android:layout_height="20sp"
+<span class="lineno">  18</span>             android:layout_gravity="right"
+<span class="lineno">  19</span>             <span class="errorspan">android:textSize="10sp"</span>
+<span class="lineno">  20</span>             android:textColor="@android:color/secondary_text_dark" />
+<span class="lineno">  21</span> 
+</pre>
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Text size is too small.</div>
+<div class="explanation">
+Avoid using sizes smaller than 12sp.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "SmallSp" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Accessibility"></a>
+<div class="category"><a href="#" title="Return to top">Accessibility</a><div class="categorySeparator"></div>
+</div>
+<a name="ContentDescription"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ContentDescription: Image without <code>contentDescription</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/activity_splash.xml">../../res/layout/activity_splash.xml</a>:8</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">   5</span>     android:layout_height="match_parent"
+<span class="lineno">   6</span>     android:orientation="vertical">
+<span class="lineno">   7</span> 
+<span class="lineno">   8</span>     <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">   9</span>         android:id="@+id/splash_bg"
+<span class="lineno">  10</span>         android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../res/layout/activity_splash.xml">../../res/layout/activity_splash.xml</a>:18</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  15</span>         android:src="@drawable/qb_splash_bg"
+<span class="lineno">  16</span>         android:visibility="visible" />
+<span class="lineno">  17</span> 
+<span class="lineno">  18</span>     <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  19</span>         android:id="@+id/splash_hero"
+<span class="lineno">  20</span>         android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../res/layout/activity_splash.xml">../../res/layout/activity_splash.xml</a>:41</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  38</span>         android:layout_marginLeft="10dp"
+<span class="lineno">  39</span>         android:layout_marginTop="10dp" />
+<span class="lineno">  40</span> 
+<span class="lineno">  41</span>     <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  42</span>         android:id="@id/splash_qb_link"
+<span class="lineno">  43</span>         android:layout_width="match_parent"
+</pre>
+<span class="location"><a href="../../res/layout/list_item_room.xml">../../res/layout/list_item_room.xml</a>:8</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">   5</span>     android:layout_height="match_parent"
+<span class="lineno">   6</span>     android:orientation="horizontal">
+<span class="lineno">   7</span> 
+<span class="lineno">   8</span>     <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">   9</span>         android:id="@+id/roomImage"
+<span class="lineno">  10</span>         android:layout_width="80dp"
+</pre>
+<span class="location"><a href="../../res/layout/list_item_user.xml">../../res/layout/list_item_user.xml</a>:8</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">   5</span>     android:layout_height="match_parent"
+<span class="lineno">   6</span>     android:orientation="horizontal">
+<span class="lineno">   7</span> 
+<span class="lineno">   8</span>     <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">   9</span>         android:layout_width="80dp"
+<span class="lineno">  10</span>         android:layout_height="80dp"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Accessibility</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Image without <code>contentDescription</code></div>
+<div class="explanation">
+Non-textual widgets like ImageViews and ImageButtons should use the <code>contentDescription</code> attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.<br/>
+<br/>
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore="ContentDescription" attribute.<br/>
+<br/>
+Note that for text fields, you should not set both the <code>hint</code> and the <code>contentDescription</code> attributes since the hint will never be shown. Just set the <code>hint</code>. See <a href="http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases">http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases</a>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ContentDescription" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Internationalization"></a>
+<div class="category"><a href="#" title="Return to top">Internationalization</a><div class="categorySeparator"></div>
+</div>
+<a name="HardcodedText"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">HardcodedText: Hardcoded text</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:21</span>: <span class="message">[I18N] Hardcoded string "message text", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  18</span>             android:layout_alignParentBottom="true"
+<span class="lineno">  19</span>             android:layout_toLeftOf="@+id/chatSendButton"
+<span class="lineno">  20</span>             android:autoText="true"
+<span class="lineno">  21</span>             <span class="errorspan">android:hint="message text" /></span>
+<span class="lineno">  22</span> 
+<span class="lineno">  23</span>         &lt;Button
+</pre>
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:29</span>: <span class="message">[I18N] Hardcoded string "Send", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  26</span>             android:layout_height="wrap_content"
+<span class="lineno">  27</span>             android:layout_alignParentBottom="true"
+<span class="lineno">  28</span>             android:layout_alignParentRight="true"
+<span class="lineno">  29</span>             <span class="errorspan">android:text="Send" /></span>
+<span class="lineno">  30</span> 
+<span class="lineno">  31</span>         &lt;ListView
+</pre>
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:50</span>: <span class="message">[I18N] Hardcoded string "Me", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  47</span>             android:layout_width="wrap_content"
+<span class="lineno">  48</span>             android:layout_height="wrap_content"
+<span class="lineno">  49</span>             android:layout_gravity="left|center_vertical"
+<span class="lineno">  50</span>             <span class="errorspan">android:text="Me"</span>
+<span class="lineno">  51</span>             android:singleLine="false"
+<span class="lineno">  52</span>             android:textSize="20dp" />
+</pre>
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:59</span>: <span class="message">[I18N] Hardcoded string "Friend", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  56</span>             android:layout_width="wrap_content"
+<span class="lineno">  57</span>             android:layout_height="wrap_content"
+<span class="lineno">  58</span>             android:layout_alignParentRight="true"
+<span class="lineno">  59</span>             <span class="errorspan">android:text="Friend"</span>
+<span class="lineno">  60</span>             android:textSize="20dp" />
+<span class="lineno">  61</span> 
+</pre>
+<span class="location"><a href="../../res/layout/activity_login.xml">../../res/layout/activity_login.xml</a>:11</span>: <span class="message">[I18N] Hardcoded string "login", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>         android:id="@+id/loginEdit"
+<span class="lineno">   9</span>         android:layout_width="match_parent"
+<span class="lineno">  10</span>         android:layout_height="wrap_content"
+<span class="lineno">  11</span>         <span class="errorspan">android:hint="login" /></span>
+<span class="lineno">  12</span> 
+<span class="lineno">  13</span>     &lt;EditText
+</pre>
+<button id="HardcodedTextDivLink" onclick="reveal('HardcodedTextDiv');" />+ 8 More Occurrences...</button>
+<div id="HardcodedTextDiv" style="display: none">
+<span class="location"><a href="../../res/layout/activity_login.xml">../../res/layout/activity_login.xml</a>:17</span>: <span class="message">[I18N] Hardcoded string "password", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>         android:id="@+id/passwordEdit"
+<span class="lineno">  15</span>         android:layout_width="match_parent"
+<span class="lineno">  16</span>         android:layout_height="wrap_content"
+<span class="lineno">  17</span>         <span class="errorspan">android:hint="password" /></span>
+<span class="lineno">  18</span> 
+<span class="lineno">  19</span>     &lt;Button
+</pre>
+<span class="location"><a href="../../res/layout/activity_login.xml">../../res/layout/activity_login.xml</a>:24</span>: <span class="message">[I18N] Hardcoded string "Log in", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  21</span>         android:layout_width="match_parent"
+<span class="lineno">  22</span>         android:layout_height="0dip"
+<span class="lineno">  23</span>         android:layout_weight="1"
+<span class="lineno">  24</span>         <span class="errorspan">android:text="Log in" /></span>
+<span class="lineno">  25</span> 
+<span class="lineno">  26</span> &lt;/LinearLayout>
+</pre>
+<span class="location"><a href="../../res/layout/activity_splash.xml">../../res/layout/activity_splash.xml</a>:58</span>: <span class="message">[I18N] Hardcoded string "Chat", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  55</span>         android:layout_centerHorizontal="true"
+<span class="lineno">  56</span>         android:layout_marginBottom="10dp"
+<span class="lineno">  57</span>         android:layout_marginTop="10dp"
+<span class="lineno">  58</span>         <span class="errorspan">android:text="Chat"</span>
+<span class="lineno">  59</span>         android:textColor="#ffffff"
+<span class="lineno">  60</span>         android:textSize="80sp" />
+</pre>
+<span class="location"><a href="../../res/layout/dialog_new.xml">../../res/layout/dialog_new.xml</a>:13</span>: <span class="message">[I18N] Hardcoded string "Select users to chat", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  10</span>         android:layout_height="wrap_content"
+<span class="lineno">  11</span>         android:layout_gravity="left|center_vertical"
+<span class="lineno">  12</span>         android:layout_marginBottom="10dp"
+<span class="lineno">  13</span>         <span class="errorspan">android:text="Select users to chat"</span>
+<span class="lineno">  14</span>         android:textSize="20dp" />
+<span class="lineno">  15</span> 
+</pre>
+<span class="location"><a href="../../res/layout/dialog_new.xml">../../res/layout/dialog_new.xml</a>:20</span>: <span class="message">[I18N] Hardcoded string "Create Chat", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  17</span>         style="?android:attr/buttonStyleSmall"
+<span class="lineno">  18</span>         android:layout_width="wrap_content"
+<span class="lineno">  19</span>         android:layout_height="wrap_content"
+<span class="lineno">  20</span>         <span class="errorspan">android:text="Create Chat"</span>
+<span class="lineno">  21</span>         android:id="@+id/createChatButton"
+<span class="lineno">  22</span>         android:layout_alignParentTop="true"
+</pre>
+<span class="location"><a href="../../res/layout/dialogs_activity.xml">../../res/layout/dialogs_activity.xml</a>:13</span>: <span class="message">[I18N] Hardcoded string "Select a dialog to chat", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  10</span>         android:layout_height="wrap_content"
+<span class="lineno">  11</span>         android:layout_gravity="left|center_vertical"
+<span class="lineno">  12</span>         android:layout_marginBottom="10dp"
+<span class="lineno">  13</span>         <span class="errorspan">android:text="Select a dialog to chat"</span>
+<span class="lineno">  14</span>         android:textSize="20dp" />
+<span class="lineno">  15</span> 
+</pre>
+<span class="location"><a href="../../res/layout/list_item_room.xml">../../res/layout/list_item_room.xml</a>:36</span>: <span class="message">[I18N] Hardcoded string "Small Text", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  33</span>         android:layout_width="wrap_content"
+<span class="lineno">  34</span>         android:layout_height="wrap_content"
+<span class="lineno">  35</span>         android:textAppearance="?android:attr/textAppearanceSmall"
+<span class="lineno">  36</span>         <span class="errorspan">android:text="Small Text"</span>
+<span class="lineno">  37</span>         android:id="@+id/textViewGroupType"
+<span class="lineno">  38</span>         android:layout_below="@+id/lastMessage"
+</pre>
+<span class="location"><a href="../../res/menu/rooms.xml">../../res/menu/rooms.xml</a>:5</span>: <span class="message">[I18N] Hardcoded string "New Chat", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">   2</span>     xmlns:chat="http://schemas.android.com/apk/res-auto">
+<span class="lineno">   3</span> 
+<span class="lineno">   4</span>     &lt;item android:id="@+id/action_add"
+<span class="lineno">   5</span>         <span class="errorspan">android:title="New Chat"</span>
+<span class="lineno">   6</span>         android:icon="@drawable/ic_action_new"
+<span class="lineno">   7</span>         chat:showAsAction="ifRoom" />
+</pre>
+</div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Internationalization</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Hardcoded text.</div>
+<div class="explanation">
+Hardcoding text attributes directly in layout files is bad for several reasons:<br/>
+<br/>
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)<br/>
+<br/>
+* The application cannot be translated to other languages by just adding new translations for existing string resources.<br/>
+<br/>
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "HardcodedText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Bi-directional Text"></a>
+<div class="category"><a href="#" title="Return to top">Bi-directional Text</a><div class="categorySeparator"></div>
+</div>
+<a name="RtlSymmetry"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">RtlSymmetry: Padding and margin symmetry</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../res/layout/list_item_message.xml">../../res/layout/list_item_message.xml</a>:28</span>: <span class="message">When you define <code>paddingLeft</code> you should probably also define <code>paddingRight</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">  25</span>             android:layout_height="wrap_content"
+<span class="lineno">  26</span>             android:layout_gravity="right"
+<span class="lineno">  27</span>             android:background="@drawable/incoming_message_bg"
+<span class="lineno">  28</span>             <span class="errorspan">android:paddingLeft="10dp"</span>
+<span class="lineno">  29</span>             android:paddingBottom="10dp"
+<span class="lineno">  30</span>             android:orientation="vertical">
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Padding and margin symmetry.</div>
+<div class="explanation">
+If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlSymmetry" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlHardcoded"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">RtlHardcoded: Using left/right instead of start/end attributes</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java">../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java</a>:95</span>: <span class="message">Use "<code>Gravity.END</code>" instead of "<code>Gravity.RIGHT</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno">  92</span>             holder.contentWithBG.setBackgroundResource(R.drawable.incoming_message_bg);
+<span class="lineno">  93</span> 
+<span class="lineno">  94</span>             LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) holder.contentWithBG.getLayoutParams();
+<span class="lineno">  95</span>             layoutParams.gravity = Gravity.<span class="errorspan">RIGHT;</span>
+<span class="lineno">  96</span>             holder.contentWithBG.setLayoutParams(layoutParams);
+<span class="lineno">  97</span> 
+</pre>
+<span class="location"><a href="../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java">../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java</a>:103</span>: <span class="message">Use "<code>Gravity.END</code>" instead of "<code>Gravity.RIGHT</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno"> 100</span>             lp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+<span class="lineno"> 101</span>             holder.content.setLayoutParams(lp);
+<span class="lineno"> 102</span>             layoutParams = (LinearLayout.LayoutParams) holder.txtMessage.getLayoutParams();
+<span class="lineno"> 103</span>             layoutParams.gravity = Gravity.<span class="errorspan">RIGHT;</span>
+<span class="lineno"> 104</span>             holder.txtMessage.setLayoutParams(layoutParams);
+<span class="lineno"> 105</span> 
+</pre>
+<span class="location"><a href="../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java">../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java</a>:107</span>: <span class="message">Use "<code>Gravity.END</code>" instead of "<code>Gravity.RIGHT</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno"> 104</span>             holder.txtMessage.setLayoutParams(layoutParams);
+<span class="lineno"> 105</span> 
+<span class="lineno"> 106</span>             layoutParams = (LinearLayout.LayoutParams) holder.txtInfo.getLayoutParams();
+<span class="lineno"> 107</span>             layoutParams.gravity = Gravity.<span class="errorspan">RIGHT;</span>
+<span class="lineno"> 108</span>             holder.txtInfo.setLayoutParams(layoutParams);
+<span class="lineno"> 109</span>         } else {
+</pre>
+<span class="location"><a href="../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java">../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java</a>:113</span>: <span class="message">Use "<code>Gravity.START</code>" instead of "<code>Gravity.LEFT</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno"> 110</span>             holder.contentWithBG.setBackgroundResource(R.drawable.outgoing_message_bg);
+<span class="lineno"> 111</span> 
+<span class="lineno"> 112</span>             LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) holder.contentWithBG.getLayoutParams();
+<span class="lineno"> 113</span>             layoutParams.gravity = Gravity.<span class="errorspan">LEFT;</span>
+<span class="lineno"> 114</span>             holder.contentWithBG.setLayoutParams(layoutParams);
+<span class="lineno"> 115</span> 
+</pre>
+<span class="location"><a href="../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java">../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java</a>:121</span>: <span class="message">Use "<code>Gravity.START</code>" instead of "<code>Gravity.LEFT</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno"> 118</span>             lp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+<span class="lineno"> 119</span>             holder.content.setLayoutParams(lp);
+<span class="lineno"> 120</span>             layoutParams = (LinearLayout.LayoutParams) holder.txtMessage.getLayoutParams();
+<span class="lineno"> 121</span>             layoutParams.gravity = Gravity.<span class="errorspan">LEFT;</span>
+<span class="lineno"> 122</span>             holder.txtMessage.setLayoutParams(layoutParams);
+<span class="lineno"> 123</span> 
+</pre>
+<button id="RtlHardcodedDivLink" onclick="reveal('RtlHardcodedDiv');" />+ 17 More Occurrences...</button>
+<div id="RtlHardcodedDiv" style="display: none">
+<span class="location"><a href="../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java">../../src/com/quickblox/sample/chat/ui/adapters/ChatAdapter.java</a>:125</span>: <span class="message">Use "<code>Gravity.START</code>" instead of "<code>Gravity.LEFT</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno"> 122</span>             holder.txtMessage.setLayoutParams(layoutParams);
+<span class="lineno"> 123</span> 
+<span class="lineno"> 124</span>             layoutParams = (LinearLayout.LayoutParams) holder.txtInfo.getLayoutParams();
+<span class="lineno"> 125</span>             layoutParams.gravity = Gravity.<span class="errorspan">LEFT;</span>
+<span class="lineno"> 126</span>             holder.txtInfo.setLayoutParams(layoutParams);
+<span class="lineno"> 127</span>         }
+</pre>
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:19</span>: <span class="message">Consider adding <code>android:layout_toStartOf="@+id/chatSendButton"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  16</span>             android:layout_width="match_parent"
+<span class="lineno">  17</span>             android:layout_height="wrap_content"
+<span class="lineno">  18</span>             android:layout_alignParentBottom="true"
+<span class="lineno">  19</span>             <span class="errorspan">android:layout_toLeftOf="@+id/chatSendButton"</span>
+<span class="lineno">  20</span>             android:autoText="true"
+<span class="lineno">  21</span>             android:hint="message text" />
+</pre>
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:28</span>: <span class="message">Consider adding <code>android:layout_alignParentEnd="true"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  25</span>             android:layout_width="wrap_content"
+<span class="lineno">  26</span>             android:layout_height="wrap_content"
+<span class="lineno">  27</span>             android:layout_alignParentBottom="true"
+<span class="lineno">  28</span>             <span class="errorspan">android:layout_alignParentRight="true"</span>
+<span class="lineno">  29</span>             android:text="Send" />
+<span class="lineno">  30</span> 
+</pre>
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:35</span>: <span class="message">Consider adding <code>android:layout_alignParentStart="false"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  32</span>             android:id="@+id/messagesContainer"
+<span class="lineno">  33</span>             android:layout_width="match_parent"
+<span class="lineno">  34</span>             android:layout_height="match_parent"
+<span class="lineno">  35</span>             <span class="errorspan">android:layout_alignParentLeft="false"</span>
+<span class="lineno">  36</span>             android:layout_alignParentTop="false"
+<span class="lineno">  37</span>             android:layout_marginBottom="20dp"
+</pre>
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:49</span>: <span class="message">Use "<code>start</code>" instead of "<code>left</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno">  46</span>             android:id="@+id/meLabel"
+<span class="lineno">  47</span>             android:layout_width="wrap_content"
+<span class="lineno">  48</span>             android:layout_height="wrap_content"
+<span class="lineno">  49</span>             <span class="errorspan">android:layout_gravity="left|center_vertical"</span>
+<span class="lineno">  50</span>             android:text="Me"
+<span class="lineno">  51</span>             android:singleLine="false"
+</pre>
+<span class="location"><a href="../../res/layout/activity_chat.xml">../../res/layout/activity_chat.xml</a>:58</span>: <span class="message">Consider adding <code>android:layout_alignParentEnd="true"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  55</span>             android:id="@+id/companionLabel"
+<span class="lineno">  56</span>             android:layout_width="wrap_content"
+<span class="lineno">  57</span>             android:layout_height="wrap_content"
+<span class="lineno">  58</span>             <span class="errorspan">android:layout_alignParentRight="true"</span>
+<span class="lineno">  59</span>             android:text="Friend"
+<span class="lineno">  60</span>             android:textSize="20dp" />
+</pre>
+<span class="location"><a href="../../res/layout/activity_splash.xml">../../res/layout/activity_splash.xml</a>:22</span>: <span class="message">Consider adding <code>android:layout_alignParentStart="false"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  19</span>         android:id="@+id/splash_hero"
+<span class="lineno">  20</span>         android:layout_width="match_parent"
+<span class="lineno">  21</span>         android:layout_height="match_parent"
+<span class="lineno">  22</span>         <span class="errorspan">android:layout_alignParentLeft="false"</span>
+<span class="lineno">  23</span>         android:layout_alignParentTop="false"
+<span class="lineno">  24</span>         android:layout_below="@+id/splash_app_title"
+</pre>
+<span class="location"><a href="../../res/layout/activity_splash.xml">../../res/layout/activity_splash.xml</a>:38</span>: <span class="message">Consider adding <code>android:layout_marginStart="10dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  35</span>         android:layout_width="wrap_content"
+<span class="lineno">  36</span>         android:layout_height="wrap_content"
+<span class="lineno">  37</span>         android:layout_gravity="center"
+<span class="lineno">  38</span>         <span class="errorspan">android:layout_marginLeft="10dp"</span>
+<span class="lineno">  39</span>         android:layout_marginTop="10dp" />
+<span class="lineno">  40</span> 
+</pre>
+<span class="location"><a href="../../res/layout/dialog_new.xml">../../res/layout/dialog_new.xml</a>:11</span>: <span class="message">Use "<code>start</code>" instead of "<code>left</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>         android:id="@+id/textView"
+<span class="lineno">   9</span>         android:layout_width="wrap_content"
+<span class="lineno">  10</span>         android:layout_height="wrap_content"
+<span class="lineno">  11</span>         <span class="errorspan">android:layout_gravity="left|center_vertical"</span>
+<span class="lineno">  12</span>         android:layout_marginBottom="10dp"
+<span class="lineno">  13</span>         android:text="Select users to chat"
+</pre>
+<span class="location"><a href="../../res/layout/dialogs_activity.xml">../../res/layout/dialogs_activity.xml</a>:11</span>: <span class="message">Use "<code>start</code>" instead of "<code>left</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>         android:id="@+id/textView"
+<span class="lineno">   9</span>         android:layout_width="wrap_content"
+<span class="lineno">  10</span>         android:layout_height="wrap_content"
+<span class="lineno">  11</span>         <span class="errorspan">android:layout_gravity="left|center_vertical"</span>
+<span class="lineno">  12</span>         android:layout_marginBottom="10dp"
+<span class="lineno">  13</span>         android:text="Select a dialog to chat"
+</pre>
+<span class="location"><a href="../../res/layout/list_item_message.xml">../../res/layout/list_item_message.xml</a>:11</span>: <span class="message">Consider adding <code>android:layout_alignParentEnd="true"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">   8</span>         android:id="@+id/content"
+<span class="lineno">   9</span>         android:layout_width="wrap_content"
+<span class="lineno">  10</span>         android:layout_height="wrap_content"
+<span class="lineno">  11</span>         <span class="errorspan">android:layout_alignParentRight="true"</span>
+<span class="lineno">  12</span>         android:orientation="vertical">
+<span class="lineno">  13</span> 
+</pre>
+<span class="location"><a href="../../res/layout/list_item_message.xml">../../res/layout/list_item_message.xml</a>:18</span>: <span class="message">Use "<code>end</code>" instead of "<code>right</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno">  15</span>             android:id="@+id/txtInfo"
+<span class="lineno">  16</span>             android:layout_width="wrap_content"
+<span class="lineno">  17</span>             android:layout_height="20sp"
+<span class="lineno">  18</span>             <span class="errorspan">android:layout_gravity="right"</span>
+<span class="lineno">  19</span>             android:textSize="10sp"
+<span class="lineno">  20</span>             android:textColor="@android:color/secondary_text_dark" />
+</pre>
+<span class="location"><a href="../../res/layout/list_item_message.xml">../../res/layout/list_item_message.xml</a>:26</span>: <span class="message">Use "<code>end</code>" instead of "<code>right</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno">  23</span>             android:id="@+id/contentWithBackground"
+<span class="lineno">  24</span>             android:layout_width="wrap_content"
+<span class="lineno">  25</span>             android:layout_height="wrap_content"
+<span class="lineno">  26</span>             <span class="errorspan">android:layout_gravity="right"</span>
+<span class="lineno">  27</span>             android:background="@drawable/incoming_message_bg"
+<span class="lineno">  28</span>             android:paddingLeft="10dp"
+</pre>
+<span class="location"><a href="../../res/layout/list_item_message.xml">../../res/layout/list_item_message.xml</a>:28</span>: <span class="message">Consider adding <code>android:paddingStart="10dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  25</span>             android:layout_height="wrap_content"
+<span class="lineno">  26</span>             android:layout_gravity="right"
+<span class="lineno">  27</span>             android:background="@drawable/incoming_message_bg"
+<span class="lineno">  28</span>             <span class="errorspan">android:paddingLeft="10dp"</span>
+<span class="lineno">  29</span>             android:paddingBottom="10dp"
+<span class="lineno">  30</span>             android:orientation="vertical">
+</pre>
+<span class="location"><a href="../../res/layout/list_item_room.xml">../../res/layout/list_item_room.xml</a>:18</span>: <span class="message">Consider adding <code>android:layout_toEndOf="@+id/roomImage"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  15</span> 
+<span class="lineno">  16</span>     &lt;TextView
+<span class="lineno">  17</span>         android:id="@+id/roomName"
+<span class="lineno">  18</span>         <span class="errorspan">android:layout_toRightOf="@+id/roomImage"</span>
+<span class="lineno">  19</span>         android:layout_width="match_parent"
+<span class="lineno">  20</span>         android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../res/layout/list_item_room.xml">../../res/layout/list_item_room.xml</a>:26</span>: <span class="message">Consider adding <code>android:layout_toEndOf="@+id/roomImage"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  23</span>     &lt;TextView
+<span class="lineno">  24</span>         android:id="@+id/lastMessage"
+<span class="lineno">  25</span>         android:layout_below="@+id/roomName"
+<span class="lineno">  26</span>         <span class="errorspan">android:layout_toRightOf="@+id/roomImage"</span>
+<span class="lineno">  27</span>         android:layout_width="match_parent"
+<span class="lineno">  28</span>         android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../res/layout/list_item_room.xml">../../res/layout/list_item_room.xml</a>:39</span>: <span class="message">Consider adding <code>android:layout_toEndOf="@+id/roomImage"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  36</span>         android:text="Small Text"
+<span class="lineno">  37</span>         android:id="@+id/textViewGroupType"
+<span class="lineno">  38</span>         android:layout_below="@+id/lastMessage"
+<span class="lineno">  39</span>         <span class="errorspan">android:layout_toRightOf="@+id/roomImage" /></span>
+<span class="lineno">  40</span> 
+<span class="lineno">  41</span> &lt;/RelativeLayout>
+</pre>
+</div>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using left/right instead of start/end attributes.</div>
+<div class="explanation">
+Using <code>Gravity#LEFT</code> and <code>Gravity#RIGHT</code> can lead to problems when a layout is rendered in locales where text flows from right to left. Use <code>Gravity#START</code> and <code>Gravity#END</code> instead. Similarly, in XML <code>gravity</code> and <code>layout_gravity</code> attributes, use <code>start</code> rather than <code>left</code>.<br/>
+For XML attributes such as paddingLeft and <code>layout_marginLeft</code>, use <code>paddingStart</code> and <code>layout_marginStart</code>. <b>NOTE</b>: If your <code>minSdkVersion</code> is less than 17, you should add <b>both</b> the older left/right attributes <b>as well as</b> the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.<br/>
+(Note: For <code>Gravity#LEFT</code> and <code>Gravity#START</code>, you can use these constants even when targeting older platforms, because the <code>start</code> bitmask is a superset of the <code>left</code> bitmask. Therefore, you can use <code>gravity="start"</code> rather than <code>gravity="left|start"</code>.)
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlHardcoded" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="MissingIssues"></a>
+<div class="category">Disabled Checks<div class="categorySeparator"></div>
+</div>
+The following issues were not run by lint, either because the check is not enabled by default, or because it was disabled with a command line flag or via one or more lint.xml configuration files in the project directories.
+<br/><br/>
+<a name="BackButton"></a>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Back button.</div>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/patterns/pure-android.html">http://developer.android.com/design/patterns/pure-android.html</a>
+</div><br/>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="EasterEgg"></a>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 6 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains easter egg.</div>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="FieldGetter"></a>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using getter instead of field.</div>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#internal_get_set">http://developer.android.com/guide/practices/design/performance.html#internal_get_set</a>
+</div><br/>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconExpectedSize"></a>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon has incorrect size.</div>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div><br/>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="LogConditional"></a>
+<div class="issue">
+<div class="id">LogConditional<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unconditional Logging Calls.</div>
+<div class="explanation">
+The BuildConfig class (available in Tools 17) provides a constant, "DEBUG", which indicates whether the code is being built in release mode or in debug mode. In release mode, you typically want to strip out all the logging calls. Since the compiler will automatically remove all code which is inside a "if (false)" check, surrounding your logging calls with a check for BuildConfig.DEBUG is a good idea.<br/>
+<br/>
+If you <b>really</b> intend for the logging to be present in release mode, you can suppress this warning with a @SuppressLint annotation for the intentional logging calls.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "LogConditional" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NegativeMargin"></a>
+<div class="issue">
+<div class="id">NegativeMargin<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Negative Margins.</div>
+<div class="explanation">
+Margin values should be positive. Negative values are generally a sign that you are making assumptions about views surrounding the current one, or may be tempted to turn off child clipping to allow a view to escape its parent. Turning off child clipping to do this not only leads to poor graphical performance, it also results in wrong touch event handling since touch events are based strictly on a chain of parent-rect hit tests. Finally, making assumptions about the size of strings can lead to localization problems.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NegativeMargin" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NewerVersionAvailable"></a>
+<div class="issue">
+<div class="id">NewerVersionAvailable<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Newer Library Versions Available.</div>
+<div class="explanation">
+This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project.<br/>
+This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NewerVersionAvailable" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="SelectableText"></a>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 7 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Dynamic text should probably be selectable.</div>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="StopShip"></a>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 10 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Code contains <code>STOPSHIP</code> marker.</div>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="TypographyQuotes"></a>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-results_files/lint-run.png" />
+<br>
+Disabled By: Default<br/>
+Priority: 5 / 10<br/>
+Category: Usability:Typography</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Straight quotes can be replaced with curvy quotes.</div>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)
+</div>
+<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Quotation_mark">http://en.wikipedia.org/wiki/Quotation_mark</a>
+</div><br/>To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedIds"></a>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+Priority: 1 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused id.</div>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="SuppressInfo"></a>
+<div class="category">Suppressing Warnings and Errors<div class="categorySeparator"></div>
+</div>
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a <code>@SuppressLint</code> annotation in the Java code<br/>
+2. With a <code>tools:ignore</code> attribute in the XML file<br/>
+3. With ignore flags specified in the <code>build.gradle</code> file, as explained below<br/>
+4. With a <code>lint.xml</code> configuration file in the project<br/>
+5. With a <code>lint.xml</code> configuration file passed to lint via the --config flag<br/>
+6. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a <code>@SuppressLint("id")</code> annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as <code>"UnusedResources"</code> or <code>{"UnusedResources","UnusedIds"}</code>, or it can be <code>"all"</code> to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a <code>tools:ignore="id"</code> attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the <code>xmlns:android</code> declaration:<br/>
+<code>xmlns:tools="http://schemas.android.com/tools"</code><br/>
+<br/>
+To suppress a lint warning in a <code>build.gradle</code> file, add a section like this:<br/>
+<br/>
+android {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;lintOptions {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disable 'TypographyFractions','TypographyQuotes'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+}<br/>
+<br/>
+Here we specify a comma separated list of issue id's after the disable command. You can also use <code>warning</code> or <code>error</code> instead of <code>disable</code> to change the severity of issues.<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named <code>lint.xml</code> and place it at the root directory of the project in which it applies.<br/>
+<br/>
+The format of the <code>lint.xml</code> file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Disable this given check in this project --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="ObsoleteLayoutParam"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="UselessLeaf"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/main.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+<code>$ lint --ignore UnusedResources,UselessLeaf /my/project/path</code><br/>
+<br/>
+For more information, see <a href="http://tools.android.com/tips/lint/suppressing-lint-warnings">http://tools.android.com/tips/lint/suppressing-lint-warnings</a><br/>
+
+
+</body>
+</html>
